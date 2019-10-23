@@ -10,3 +10,6 @@ Football has always been touted as an immeasureable sport. Different coaches and
 
 # Overview
 This project begins with the data cleaning and processing, followed by an initial exploratory data analysis to identify the distributions of each fields, and a graphical analysis of the best performing players. Following this, the project will investigate the characteristics of these players and draw insights on the upcoming talents in FIFA.
+
+# References:
+[1] Data scraped from https://sofifa.com/ and provided on kaggle by Karan Gadiya https://www.kaggle.com/karangadiya/fifa19
