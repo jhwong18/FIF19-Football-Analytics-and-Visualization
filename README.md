@@ -13,3 +13,6 @@ This project begins with the data cleaning and processing, followed by an initia
 
 # References:
 [1] Data scraped from https://sofifa.com/ and provided on kaggle by Karan Gadiya https://www.kaggle.com/karangadiya/fifa19
+
+# Kaggle Link:
+https://www.kaggle.com/jinghuiwong/fifa-analysis-of-top-and-avg-players
