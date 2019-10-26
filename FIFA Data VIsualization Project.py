@@ -165,11 +165,11 @@ top_10[['Name','Overall','Club','Position']]
 
 # The best players in each position are (based on the overall score):
 top_3_position = dat.groupby(['Position']).apply(lambda x: x.sort_values(['Overall'],ascending = False) )
-top_3_position.groupby(['Position']).head(1).sort_values(['Overall'],ascending = False)
+top_3_position.groupby([level=0).head(1).sort_values(['Overall'],ascending = False)
 
 # The top 3 players in each position are (based on the overall score):
 top_3_position = dat.groupby(['Position']).apply(lambda x: x.sort_values(['Overall'],ascending = False) )
-top_3_position.groupby(['Position']).head(3)
+top_3_position.groupby(level=0).head(3)
 
 # We would like to understand the characteristics of the best players
 
@@ -305,7 +305,7 @@ plt.show()
 
 # The skill distribution of top 20 players in each position are:
 top_20_position = dat.groupby(['Position']).apply(lambda x: x.sort_values(['Overall'],ascending = False) )
-top20_data = top_20_position.groupby(['Position']).head(20)
+top20_data = top_20_position.groupby(level=0).head(20)
 top20_data = top20_data[['Name','Age','Nationality','Overall','Club','Position','Pace','Shooting',
                      'Passing','Dribbling Skill','Physical','Goal Keeping']]
 Positions = ['GK','LB','CB','RB','CM','CAM','RW','LW','ST','RF']
@@ -335,7 +335,7 @@ from matplotlib import rcParams
 rcParams['figure.figsize'] = 11.7,8.27
 
 top_20_position = dat.groupby(['Position']).apply(lambda x: x.sort_values(['Overall'],ascending = False) )
-top20_data = top_20_position.groupby(['Position']).head(20)
+top20_data = top_20_position.groupby(level=0).head(20)
 
 
 # Distribution of their ages
